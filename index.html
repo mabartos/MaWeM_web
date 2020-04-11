@@ -3,25 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapela MaWeM</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body id="top">
-
-    <nav id="navbar">
-        <div class="content">
-            <ul class="navbar-nav">
-                <li class="active"><a href=#section-home>Home</a></li>
-                <li><a href=#section-news>Novinky</a></li>
-                <li><a href=#section-media>Media</a></li>
-                <li><a href=#section-cast>Obsazení</a></li>
-                <li><a href=#section-contact>Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <section id="section-home">
         <div class="carousel-container">
             <div class="carousel-slide fade">
@@ -46,39 +35,165 @@
         </div>
     </section>
 
+    <nav id="navbar">
+        <div class="content">
+            <ul class="navbar-nav">
+                <li class="active"><a href=#section-home>Home</a></li>
+                <li><a href=#section-news>Novinky</a></li>
+                <li><a href=#section-about>O nás</a></li>
+                <li><a href=#section-cast>Obsazení</a></li>
+                <li><a href=#section-contact>Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div id="mobileLogoNav">
+            <img src="img/mawem_logo2.png" alt="logo" />
+        </div>
+
+        <a href="javascript:void(0)" class="hamburger" onclick="handleShowBurger()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <div id="mobileNav" onClick="handleCloseDialog()">
+        <a href="javascript:void(0)" id="closeDialog">
+            <h3>X</h3>
+        </a>
+        <a href=#section-home>
+            <h4>Home</h4>
+        </a>
+        <a href=#section-news>
+            <h4>Novinky</h4>
+        </a>
+        <a href=#section-about>
+            <h4>O nás</h4>
+        </a>
+        <a href=#section-cast>
+            <h4>Obsazení</h4>
+        </a>
+        <a href=#section-contact>
+            <h4>Kontakt</h4>
+        </a>
+    </div>
+
     <section id="section-news">
         <div class="content">
             <h1>Novinky</h1>
-            <img src="img/oldies1.png" alt="oldies">
+            <div class="cards">
+                <div class="card">
+                    <img src="img/main3.jpg" alt="kostniky">
+                    <div class="card-body">
+                        <p clas="date">21.10.2018</p>
+                        <h4>Posvícenská zábava Kostníky</h4>
+                        <p>Díky moc, že jste se zúčastnili !! Přišlo vás víc jak 160. Moc si toho vážíme. Doufám, že se vám to líbilo a případně nám můžete zanechat vzkaz co se vám libílo/nelíbilo :)</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/uhercice.jpg" alt="Barevna stage">
+                    <div class="card-body">
+                        <p clas="date">20.10.2018</p>
+                        <h4>Konečně změna našeho názvu</h4>
+                        <p>Na posvícenské zábavě jsme odhalili náš nový název. Jste na těchto stránkách, tak vidíte, že my jsme MAWEM!!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/kostnikyStage.jpg" alt="kapela">
+                    <div class="card-body">
+                        <p clas="date">20.10.2018</p>
+                        <h4>Zakoupení nových světelných aparátů</h4>
+                        <p>Naši kapelu čekalo pár změn a uvažujeme i o nahrávce našich písní! :)</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="section-media">
+    <section id="section-about" class="light">
         <div class="content">
-            <h2>Media</h2>
+            <h2>O nás</h2>
+
+            <div class="about-container">
+
+                <div class="about-item ">
+                    <h4>My jme kapela <span style="color:red">MaWeM</span> !! Jsme takoví vesničtí "loupáci", ale muzika nás stále baví :)</h4>
+                    <p>Jsme mladá kapela z vesnice, kterou by jste asi stěží hledali na mapě. Na Vysočině blízko Jemnice leží malebná vesnice Kostníky, kde jsme vyrůstali všichni společně a naštěstí jsme měli společný koníček. Hudbu. </p>
+                </div>
+                <div class="about-item ">
+                    <img src="img/029.jpg" alt="old">
+                </div>
+
+                <div class="about-item">
+                    <h4>Proč MaWeM ?!</h4>
+                    <p>Už to fakt chtělo změnu a za náš předchozí název jsme se docela i styděli. Po 10 letech od založení naší kapely jsme to konečně dokázali. Vymysleli jsme nové jméno MaWeM. Vyjadřuje to složení naši kapely.</p>
+                    <span style="font-size: 22px;"><span style="color:red">Ma</span>rek – <span style="color:red">Ve</span>rda + <span style="color:red">V</span>ít – <span style="color:red">M</span>artin.</span>
+                    <p>S novým názvem jsme pořídili i nové věci, jak světelné tak i zvukové zařízení. Jsme s tímto názvem spokojeni a věříme, že se líbí i vám.</p>
+                </div>
+
+                <div class="about-item floatRight">
+                    <img src="img/oldies1_edited.png" alt="old">
+                </div>
+
+                <div class="about-item floatLeft">
+                    <h4>Jak to všechno začalo...</h4>
+                    <p>V roce 2008 se v Kostníkách konal karneval. Pořadatelé chtěli, aby tam hráli děti. A tak se díky panu <span style="color:red">F. Puchnarovi</span> stalo. Svolal všechny, kteří už někdy v ruce drželi hudební nástroj a byla kapela! </p>
+                    <p>​ Ze začátku nás bylo asi 8, ale po pár zkouškách už jen 5. Současná sestava + ještě jedny bicí. V tu dobu nám bylo 9-11 let. Jako pořádná kapela jsme potřebovali název a tak kamarád vymyslel SPEEDŘI.</p>
+
+                </div>
+
+                <div class="about-item floatLeft">
+                    <h4>Uchycení názvu...</h4>
+                    <p>Jeden bubeník nás opustil, ale zbytek kapely jsme vydrželi a pokračovali v nacvičování nových písní a ve vystupování. Každý jsme se hudebně vzdělávali v různých zařízeních. Postupem času jsme potřebovali řídit kapelu jako celek, ne
+                        každý zvlášť. Z tohoto důvodu k nám 2 - 3 roky dojížděl pan učitel <span style="color:red">Jirka Julina</span>.
+                    </p>
+                    <p> Od roku 2012 jsme se učili v ZUŠ Dačice, kde jsme poznali hodně muzikantských kámošů a otevřeli se nám další možnosti, co se týče vystupování, díky panu <span style="color:red">Pepovi Mocharovi</span>. Celou dobu jsme vystupovali pod
+                        názvem <span style="color:red">SPEEDŘI</span>, který se nám vlastně vůbec nelíbil. Když jsme přemýšleli o změně od blízkého okolí jsme slyšeli hodně kritiky.</p>
+                </div>
+                <div class="about-item floatRight">
+                    <img src="img/oldies3_edited.png" alt="old">
+                </div>
+            </div>
         </div>
+
+
     </section>
 
     <section id="section-cast">
         <div class="content">
+            <h2>Obsazení</h2>
+            <div class="cards cast" id="cast">
+                <div class="card person" id="teson"></div>
+                <div class="card person" id="matyld"></div>
+                <div class="card person" id="verda"></div>
+
+                <div class="card person" id="boucek"></div>
+
+
+                <div class="card person audio" id="jirka"></div>
+
+            </div>
+
 
         </div>
     </section>
 
     <section id="section-contact">
         <div class="content">
+            <div class="contact-container">
+                <div class="contact-item floatLeft">
+                    <h2>Kontaktujte nás</h2>
+                    <p>MARTIN BARTOŠ</p>
+                    <p>thematyld@gmail.com</p>
+                    <p>Tel. 728 245 284</p>
+                </div>
+                <div class="contact-item floatRight">
+                    <img src="img/logo_black.png" alt="logo">
 
+
+                    <a href="https://www.facebook.com/mawem.kostniky/"><img id="icon" src="img/fb_icon.png" alt="fb"></a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <footer id="footer">
-        <div class="content">
-
-        </div>
-    </footer>
-
 </body>
 <script src="main.js"></script>
-
 
 </html>
