@@ -1,5 +1,6 @@
 let carouselSlideIndex = 0;
 
+// Card slide on intro page
 function showCarousel() {
     let allSlides = document.getElementsByClassName("carousel-slide");
 
@@ -16,6 +17,7 @@ function showCarousel() {
     setTimeout(showCarousel, 3000);
 };
 
+// Helping function to get all 'li' elements from navbar
 function getAllSectionsInNavbar() {
     let items = document.getElementsByTagName("li");
     let sections = [];
@@ -29,6 +31,7 @@ function getAllSectionsInNavbar() {
 let prevIndex = 0;
 let activeIndex = 0;
 
+// Change activity of the navbar items; scrolling
 function changeActivityOfNavbarItems() {
     let items = getAllSectionsInNavbar();
     let navItems = document.getElementsByTagName("li");
@@ -54,12 +57,14 @@ function changeActivityOfNavbarItems() {
 
 let isOpen;
 
+// Close mobile dialog
 function handleCloseDialog() {
     let mobileNav = document.getElementById("mobileNav");
     mobileNav.style.display = "none";
     isOpen = false;
 }
 
+// Mobile menu burger
 function handleShowBurger() {
     let mobileNav = document.getElementById("mobileNav");
     if (!isOpen) {
@@ -71,17 +76,20 @@ function handleShowBurger() {
     }
 }
 
+// If user scrolls in mobile version on the top, then the cancel button will appear.
 function checkIfCanExitDialog() {
     if (isOpen) {
         showExitDialog();
     }
 }
 
+// Check if carousel is present on the current view.
 function isCarouselPresent() {
     let sectionNews = document.getElementById("section-news");
     return window.pageYOffset <= sectionNews.offsetTop - 30;
 }
 
+// Mobile version - show cancel button
 function showExitDialog() {
     let showExitDialog = document.getElementById("closeDialog");
     if (isCarouselPresent()) {

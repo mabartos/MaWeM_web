@@ -13,6 +13,9 @@ html {
     font-family: Montserrat;
 }
 
+
+/* Static background */
+
 body#top {
     position: absolute;
     margin: 0;
@@ -23,6 +26,9 @@ body#top {
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
+
+/* Centered content */
 
 .content {
     margin: auto !important;
@@ -38,7 +44,20 @@ img {
     height: 100%;
 }
 
-section {}
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.light h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+
+/* Light cards */
 
 .light {
     background-color: whitesmoke;
@@ -92,13 +111,15 @@ ul.navbar-nav {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     font-size: 22px;
-    font-weight: 1500;
     margin: 0px 20px 0 20px;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 4px 15px 2px 15px;
     border-radius: 2px 17px 2px 17px;
 }
+
+
+/* Mobile version - show logo on the top of the navbar */
 
 #mobileLogoNav {
     display: block;
@@ -112,6 +133,9 @@ ul.navbar-nav {
     width: 100px;
 }
 
+
+/* Mobile version - show hamburger icon in the right corner of the navbar */
+
 #navbar a.hamburger {
     display: block;
     visibility: hidden;
@@ -124,6 +148,9 @@ ul.navbar-nav {
     color: white;
 }
 
+
+/* If user scrolls under the carousel, the navbar will stick to the top of the page */
+
 .sticky {
     position: fixed !important;
     top: 0 !important;
@@ -132,6 +159,9 @@ ul.navbar-nav {
     width: 100%;
     z-index: 100;
 }
+
+
+/* Mobile navigation*/
 
 #mobileNav {
     padding: 10px;
@@ -183,6 +213,9 @@ ul.navbar-nav {
     padding-top: 0 !important;
 }
 
+
+/* Carousel - slideshow */
+
 .carousel-container {
     position: relative;
     top: 0;
@@ -211,6 +244,9 @@ ul.navbar-nav {
     animation-duration: 2.5s;
     animation-direction: alternate;
 }
+
+
+/* Define effect for carousel - Change opacity */
 
 @-webkit-keyframes fader {
     from {
@@ -242,6 +278,9 @@ ul.navbar-nav {
 #section-news .content {
     padding-top: 80px;
 }
+
+
+/* If the screen size is changed, something is changed too. */
 
 @media only screen and (max-width:620px) {
     .card {
@@ -309,7 +348,7 @@ ul.navbar-nav {
 
 .card .card-body {
     margin: auto !important;
-    color: black;
+    color: white;
     height: 100%;
     padding: 0px 20px 10px 20px;
     border-radius: 10px;
@@ -317,7 +356,6 @@ ul.navbar-nav {
 
 .card-body .date {
     text-align: left;
-    color: yellow !important;
 }
 
 
@@ -370,7 +408,7 @@ ul.navbar-nav {
 
 .cards.cast {
     grid-column-gap: 10px !important;
-    grid-template-columns: repeat(autofit, minmax(100px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
 }
 
 #section-cast {
@@ -386,6 +424,9 @@ ul.navbar-nav {
 #section-cast .card {
     transition: 0.7s;
 }
+
+
+/* Specific background of the cards */
 
 
 /* TESON */
@@ -471,7 +512,7 @@ ul.navbar-nav {
 }
 
 .contact-container {
-    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     display: grid;
     position: relative;
     overflow: hidden;
