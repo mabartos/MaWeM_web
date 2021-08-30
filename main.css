@@ -436,40 +436,40 @@ ul.navbar-nav {
 }
 
 #section-cast .card#teson:hover {
-    background-image: url("img/teson_hover.png");
+    background-image: url("img/lower_quality/teson_hover_lq.jpg");
 }
 
 
 /* MATYLD */
 
 #section-cast .card#matyld {
-    background-image: url("img/matyld_black_edit.png");
+    background-image: url("img/lower_quality/matyld_black_edit_lq.jpg");
 }
 
 #section-cast .card#matyld:hover {
-    background-image: url("img/matyld_hover.png");
+    background-image: url("img/lower_quality/matyld_hover.jpg");
 }
 
 
 /* VERDA */
 
 #section-cast .card#verda {
-    background-image: url("img/verda_black_edit.png");
+    background-image: url("img/lower_quality/verda_black_edit_lq.jpg");
 }
 
 #section-cast .card#verda:hover {
-    background-image: url("img/verda_hover.png");
+    background-image: url("img/lower_quality/verda_hover_lq.jpg");
 }
 
 
 /* BOUCEK */
 
 #section-cast .card#boucek {
-    background-image: url("img/boucek_black_edit.png");
+    background-image: url("img/lower_quality/boucek_black_edit_lq.jpg");
 }
 
 #section-cast .card#boucek:hover {
-    background-image: url("img/boucek_hover.png");
+    background-image: url("img/lower_quality/boucek_hover_lq.jpg");
 }
 
 

@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
+RewriteCond %{HTTP_HOST} ^(www\.)?mawem.cz
+
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L]
