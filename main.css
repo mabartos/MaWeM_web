@@ -222,6 +222,7 @@ ul.navbar-nav {
     background-color: black;
     background-size: cover;
     height: calc(100vh);
+    width: calc(100vw);
     overflow: hidden;
 }
 
